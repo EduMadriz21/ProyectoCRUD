@@ -4,16 +4,16 @@ public class Marca {
 
     private int idMarca;
     private String nombre;
-    private String paisOrigen;
+    private String descripcion;
     private int estado;
 
     public Marca() {
     }
 
-    public Marca(int idMarca, String nombre, String paisOrigen, int estado) {
+    public Marca(int idMarca, String nombre, String descripcion, int estado) {
         this.idMarca = idMarca;
         this.nombre = nombre;
-        this.paisOrigen = paisOrigen;
+        this.descripcion = descripcion;
         this.estado = estado;
     }
 
@@ -33,12 +33,12 @@ public class Marca {
         this.nombre = nombre;
     }
 
-    public String getPaisOrigen() {
-        return paisOrigen;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setPaisOrigen(String paisOrigen) {
-        this.paisOrigen = paisOrigen;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public int getEstado() {
@@ -47,5 +47,10 @@ public class Marca {
 
     public void setEstado(int estado) {
         this.estado = estado;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
     }
 }

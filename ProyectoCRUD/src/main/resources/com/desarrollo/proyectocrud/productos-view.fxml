@@ -48,7 +48,6 @@
                     <RowConstraints/>
                 </rowConstraints>
 
-
                 <Label text="Código:"
                        GridPane.columnIndex="0"
                        GridPane.rowIndex="0"/>
@@ -57,7 +56,6 @@
                            promptText="Ej: P001"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="0"/>
-
 
                 <Label text="Nombre:"
                        GridPane.columnIndex="2"
@@ -68,7 +66,6 @@
                            GridPane.columnIndex="3"
                            GridPane.rowIndex="0"/>
 
-
                 <Label text="Precio:"
                        GridPane.columnIndex="0"
                        GridPane.rowIndex="1"/>
@@ -77,7 +74,6 @@
                            promptText="0.00"
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="1"/>
-
 
                 <Label text="Stock:"
                        GridPane.columnIndex="2"
@@ -88,7 +84,6 @@
                            GridPane.columnIndex="3"
                            GridPane.rowIndex="1"/>
 
-
                 <Label text="Categoría:"
                        GridPane.columnIndex="0"
                        GridPane.rowIndex="2"/>
@@ -97,7 +92,6 @@
                           prefWidth="180"
                           GridPane.columnIndex="1"
                           GridPane.rowIndex="2"/>
-
 
                 <Label text="Marca:"
                        GridPane.columnIndex="2"
@@ -108,7 +102,6 @@
                           GridPane.columnIndex="3"
                           GridPane.rowIndex="2"/>
 
-
                 <Label text="Fecha:"
                        GridPane.columnIndex="0"
                        GridPane.rowIndex="3"/>
@@ -116,7 +109,6 @@
                 <DatePicker fx:id="dpFecha"
                             GridPane.columnIndex="1"
                             GridPane.rowIndex="3"/>
-
 
                 <Label text="Descripción:"
                        GridPane.columnIndex="2"
@@ -178,7 +170,6 @@
                     <RowConstraints/>
                 </rowConstraints>
 
-
                 <Label text="Código o nombre:"
                        GridPane.columnIndex="0"
                        GridPane.rowIndex="0"/>
@@ -187,7 +178,6 @@
                            promptText="Buscar..."
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="0"/>
-
 
                 <Label text="Categoría:"
                        GridPane.columnIndex="2"
@@ -198,7 +188,6 @@
                           GridPane.columnIndex="3"
                           GridPane.rowIndex="0"/>
 
-
                 <Label text="Desde:"
                        GridPane.columnIndex="0"
                        GridPane.rowIndex="1"/>
@@ -207,7 +196,6 @@
                             GridPane.columnIndex="1"
                             GridPane.rowIndex="1"/>
 
-
                 <Label text="Hasta:"
                        GridPane.columnIndex="2"
                        GridPane.rowIndex="1"/>
@@ -215,7 +203,6 @@
                 <DatePicker fx:id="dpHasta"
                             GridPane.columnIndex="3"
                             GridPane.rowIndex="1"/>
-
 
                 <Label text="Precio mínimo:"
                        GridPane.columnIndex="0"
@@ -226,7 +213,6 @@
                            GridPane.columnIndex="1"
                            GridPane.rowIndex="2"/>
 
-
                 <Label text="Precio máximo:"
                        GridPane.columnIndex="2"
                        GridPane.rowIndex="2"/>
@@ -236,13 +222,11 @@
                            GridPane.columnIndex="3"
                            GridPane.rowIndex="2"/>
 
-
                 <CheckBox fx:id="chkConStock"
                           text="Solo productos con existencia"
                           GridPane.columnIndex="0"
                           GridPane.columnSpan="2"
                           GridPane.rowIndex="3"/>
-
 
                 <Label text="Ordenar por:"
                        GridPane.columnIndex="2"
@@ -278,31 +262,35 @@
 
                     <TableColumn fx:id="colCodigo"
                                  text="Código"
-                                 prefWidth="100"/>
+                                 prefWidth="90"/>
 
                     <TableColumn fx:id="colNombre"
                                  text="Nombre"
-                                 prefWidth="180"/>
+                                 prefWidth="160"/>
 
                     <TableColumn fx:id="colCategoria"
                                  text="Categoría"
-                                 prefWidth="150"/>
+                                 prefWidth="130"/>
 
                     <TableColumn fx:id="colMarca"
                                  text="Marca"
-                                 prefWidth="150"/>
+                                 prefWidth="120"/>
+
+                    <TableColumn fx:id="colDescripcion"
+                                 text="Descripción"
+                                 prefWidth="180"/>
 
                     <TableColumn fx:id="colPrecio"
                                  text="Precio"
-                                 prefWidth="100"/>
+                                 prefWidth="90"/>
 
                     <TableColumn fx:id="colStock"
                                  text="Stock"
-                                 prefWidth="80"/>
+                                 prefWidth="70"/>
 
                     <TableColumn fx:id="colFecha"
                                  text="Fecha creación"
-                                 prefWidth="150"/>
+                                 prefWidth="130"/>
 
                 </columns>
 

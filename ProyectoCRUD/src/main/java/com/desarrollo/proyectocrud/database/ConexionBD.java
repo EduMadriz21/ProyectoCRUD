@@ -7,19 +7,19 @@ import java.sql.SQLException;
 public class ConexionBD {
 
     private static final String URL =
-            "jdbc:postgresql://localhost:5432/bdventas";
+            "jdbc:postgresql://127.0.0.1:5432/bdventas";
 
-    private static final String USUARIO = "postgres";
+    private static final String USUARIO =
+            "postgres";
 
-    private static final String CONTRASENA = "12345678";
+    private static final String CONTRASENA =
+            "12345678";
 
     public static Connection conectar() {
 
-        Connection conexion = null;
-
         try {
 
-            conexion = DriverManager.getConnection(
+            Connection conexion = DriverManager.getConnection(
                     URL,
                     USUARIO,
                     CONTRASENA
@@ -27,12 +27,17 @@ public class ConexionBD {
 
             System.out.println("Conexion exitosa a PostgreSQL");
 
+            return conexion;
+
         } catch (SQLException e) {
 
             System.out.println("Error al conectar con PostgreSQL");
             System.out.println(e.getMessage());
-        }
 
-        return conexion;
+            throw new RuntimeException(
+                    "No se pudo conectar a la base de datos",
+                    e
+            );
+        }
     }
 }
